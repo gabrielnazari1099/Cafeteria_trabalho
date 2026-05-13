@@ -1,0 +1,85 @@
+/* 
+cores pro site
+ --brown-deep: #2C1507;
+    --brown-main: #5C2D0E;
+    --brown-mid: #8B4513;
+    --brown-warm: #C67C4E;
+    cor do link inativo #E8C4A0;
+    --cream-dark: #F0D9BE;
+    --cream: #FBF3EA;
+    --cream-white: #FFFDF9;
+    cor do link ativo gold: #D4A355;
+    cor do texto #1A0A00;
+    --text-mid: #4A2C10;
+    --text-muted: #8A6040;
+    --nav-h: 72px;
+*/
+
+body{
+    /* topografia css */
+    background-color: #321B11; /*cor de fundo*/
+    color: black; /*cor de fonte*/
+    font-family: "roboto", sans-serif; /*tipo de fonte*/
+    font-size: 16px; /*tamanho da fonte - px/em/rem */
+    margin: 0%; /*margem do corpo da página*/
+}
+
+.cabecalho {
+    background-color: #321B11;
+    padding: 20px;
+    color: #C79257;
+    font-family: "roboto", sans-serif;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E8C4A0;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #D4A355;
+    opacity: 0.7; 
+    text-decoration: underline;
+}
+
+.titulo-cabecalho {
+    font-family: playerfair display, serif;
+    font-size: 2.5rem;
+    color: #D4A355;
+    letter-spacing: 0.04rem;
+    text-decoration: none;
+    
+}
+
+.nav-link {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color:#E8C4A0;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color .25s, border-color .25s;
+    display: flex;
+    list-style: none;
+
+}
+
+.decoracao-ativo {
+    color: #D4A355;
+    border-color: #D4A355;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #7c4e19;
+    margin: 0 20px 0 20px;
+}
