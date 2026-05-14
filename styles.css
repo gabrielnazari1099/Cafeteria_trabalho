@@ -4,7 +4,7 @@ cores pro site
     --brown-main: #5C2D0E;
     --brown-mid: #8B4513;
     --brown-warm: #C67C4E;
-    cor do link inativo #E8C4A0;
+    cor do link inativo brown-light: #E8C4A0;
     --cream-dark: #F0D9BE;
     --cream: #FBF3EA;
     --cream-white: #FFFDF9;
@@ -14,6 +14,9 @@ cores pro site
     --text-muted: #8A6040;
     --nav-h: 72px;
 */
+
+  html { scroll-behavior: smooth; }
+
 
 body{
     /* topografia css */
@@ -82,4 +85,39 @@ hr {
     border: none;
     border-top: 1px solid #7c4e19;
     margin: 0 20px 0 20px;
+}
+
+  footer {
+    background: #321B11;
+    padding: 2rem 8vw;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-top: 1px solid rgba(212,163,85,0.2);
+  }
+
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; 
+    color: #D4A355;
+  }
+
+  .footer-copy { 
+    font-size: 0.75rem; 
+    color: #E8C4A0; 
+}
+
+  .footer-links { 
+    display: flex; 
+    gap: 1.5rem; 
+}
+
+  .footer-links a { 
+    font-size: 0.75rem; 
+    color:#E8C4A0; 
+    text-decoration: none; 
+}
+
+  .footer-links a:hover { 
+    color: #D4A355; 
 }
