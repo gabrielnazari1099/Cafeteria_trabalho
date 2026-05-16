@@ -101,7 +101,8 @@ footer {
     align-items: center;
     padding: 2rem 8vw;
     background: var(--brown-bg);
-    border-top: 1px solid rgba(212, 163, 85, 0.2);
+    border-top: 1px solid var(--sep-color);
+    margin: 0 20px;
 }
 
 .footer-logo {
