@@ -1,5 +1,16 @@
-/* Definição das Variáveis Globais */
+/* Animação suave de entrada (Fade In Up) */
+@keyframes subirAparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Definição das Variáveis Globais */
 :root /* variáveis */ {
 
     /* Cores - Para usar é só colocar 'var(--nome-da-cor)' */
@@ -7,7 +18,6 @@
     --brown-bg: #321B11;
     --brown-light: #E8C4A0;
     --gold: #D4A355;
-    --gold-muted: #C79257;
     --sep-color: #7c4e19;
 
     /* Fontes - Para usar é só colocar 'var(--nome-da-fonte)' */
@@ -16,9 +26,8 @@
     --font-nav: "Jost", sans-serif;
 }
 
-/* Configurações Gerais */
 body {
-    background-color: var(--brown-bg); 
+    background-color: var(--brown-deep); 
     color: #000000; 
     font-family: var(--font-main); 
     font-size: 16px; 
@@ -32,7 +41,7 @@ body {
     align-items: center;
     gap: 30px;
     padding: 20px 50px; 
-    background-color: var(--brown-bg);
+    background-color: var(--brown-deep);
     color: var(--gold-muted);
 }
 
@@ -44,7 +53,6 @@ body {
     text-decoration: none;
 }
 
-/* Menu de Navegação */
 .nav-link {
     display: flex;
     list-style: none;
@@ -65,7 +73,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Animação da linha (Underline) */
 .nav-link a::after {
     content: '';
     position: absolute;
@@ -88,19 +95,114 @@ body {
     width: 100%;
 }
 
-/* Elementos de Separação e Rodapé */
 hr {
     border: none;
     border-top: 1px solid var(--sep-color);
     margin: 0 20px;
 }
 
+/* começando o conteúdo da página (ERICK) */
+.home-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  gap: 50px;
+  min-height: 70vh;
+  animation: subirAparecer 1s ease-out;
+}
+
+.home-conteudo-1 {
+  flex: 1;
+}
+
+.home-conteudo-1 h2 {
+  font-size: 2.8rem;
+  color: var(--gold);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.home-conteudo-1 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: var(--brown-light);
+}
+
+
+.home-conteudo-2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 60px 8%;
+  gap: 50px;
+  min-height: 70vh;
+  animation: subirAparecer 1s ease-out;
+  background-color: var(--brown-bg);
+}
+
+.home-conteudo-2-texto {
+    flex: 1;
+}
+.home-conteudo-2-texto h2 {
+    font-size: 2.8rem;
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.home-conteudo-2-texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: var(--brown-light);
+}
+
+.home-conteudo-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-conteudo-imagem img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.home-btn-redirecionar {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.home-btn-redirecionar:hover {
+    background-color: var(--gold);
+    color: var(--brown-bg); /* Inverte as cores no hover */
+    box-shadow: 0 0 15px rgba(212, 163, 85, 0.4);
+}
+
+
 footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
     padding: 2rem 8vw;
-    background: var(--brown-bg);
+    background: var(--brown-deep);
     border-top: 1px solid var(--sep-color);
     margin: 0 20px;
 }
