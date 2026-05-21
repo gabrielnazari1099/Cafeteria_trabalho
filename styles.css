@@ -19,6 +19,7 @@
     --brown-light: #E8C4A0;
     --gold: #D4A355;
     --sep-color: #7c4e19;
+    --border-image: #000000 ;
 
     /* Fontes - Para usar é só colocar 'var(--nome-da-fonte)' */
     --font-main: "Roboto", sans-serif;
@@ -112,11 +113,11 @@ hr {
   animation: subirAparecer 1s ease-out;
 }
 
-.home-conteudo-1 {
+.home-conteudo-esquerda {
   flex: 1;
 }
 
-.home-conteudo-1 h2 {
+.home-conteudo-esquerda h2 {
   font-size: 2.8rem;
   color: var(--gold);
   line-height: 1.2;
@@ -125,15 +126,14 @@ hr {
   letter-spacing: 0.05em;
 }
 
-.home-conteudo-1 p {
+.home-conteudo-esquerda p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 35px;
   color: var(--brown-light);
 }
 
-
-.home-conteudo-2 {
+.home-conteudo-direita {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -144,10 +144,10 @@ padding: 60px 8%;
   background-color: var(--brown-bg);
 }
 
-.home-conteudo-2-texto {
+.home-conteudo-direita-texto {
     flex: 1;
 }
-.home-conteudo-2-texto h2 {
+.home-conteudo-direita-texto h2 {
     font-size: 2.8rem;
     color: var(--gold);
     line-height: 1.2;
@@ -155,7 +155,7 @@ padding: 60px 8%;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-.home-conteudo-2-texto p {
+.home-conteudo-direita-texto p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 35px;
@@ -169,8 +169,9 @@ padding: 60px 8%;
 }
 
 .home-conteudo-imagem img {
+  filter: drop-shadow(0px 0px 20px var( --border-image));
   width: 100%;
-  max-width: 500px;
+  max-width: 367px;
   height: 400px;
   object-fit: cover;
   border-radius: 15px;
