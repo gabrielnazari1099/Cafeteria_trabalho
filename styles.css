@@ -132,37 +132,47 @@ footer {
     color: var(--gold); 
 }
 
+/* ── CONTATO ── */
 
+ .contato-items {
+     display: flex; 
+     flex-direction: column;
+      gap: 1.5rem;
+     }
 
+  .contato-item {
+    display: flex; 
+    gap: 1rem; 
+    align-items: flex-start;
+    padding: 1.2rem; 
+    border: 1px solid 
+    var(--cream-dark);
+    border-radius: 6px; 
+    background: var(--cream);
+    transition: border-color .2s;
+  }
 
-
-
-.color_main{
-    background-color: #FBF3EA;
+  .contact-item {
+     border-color: var(--brown-warm); 
 }
 
-.card-contato {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    background-color: #f8efe6;
-    border: 1px solid #e8c9a8;
-    border-radius: 6px;
-
-    padding: 20px;
-    margin-bottom: 24px;
-
-    .icone1{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    background-color: #2b1002;
-    color: #ff3b8a;
-
-    display: flex;
-    align-items: center;
+  .contato-item-icone {
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%; 
+    flex-shrink: 0;
+    background: var(--brown-deep);
+    display: flex; 
+    align-items: center; 
     justify-content: center;
+    font-size: 1.1rem;
+  }
+
+.section-eyebrow{
+    justify-content:flex-start ;
+}
+
+.section-title{
+     
 }
 
