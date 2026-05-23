@@ -382,3 +382,26 @@ footer {
     text-align: justify;
     color: var(--brown-light);
 }
+/* GALERIA - FEITO POR LEONARDO */
+
+  .galeria-mosaico{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 180px;
+    gap: 10px;
+  }
+
+  .galeria-mosaico img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .galeria-mosaico .destaque{
+    grid-column: span 2 ;
+    grid-row: span 2;
+  }
+
+  .galeria-mosaico .larga{
+    grid-column: span 2 ;
+  }
