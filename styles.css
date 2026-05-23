@@ -10,11 +10,16 @@
     --gold-muted: #C79257;
     --cor-primaria: #D4A355;
     --sep-color: #7c4e19;
+    --cream-dark: #F0D9BE;
+    --text-muted: #8A6040;
+    --brown-warm: #C67C4E;
 
     /* Fontes - Para usar é só colocar 'var(--nome-da-fonte)' */
     --font-main: "Roboto", sans-serif;
     --font-title: "Playfair Display", serif;
     --font-nav: "Jost", sans-serif;
+     --nav-h: 72px;
+     
 }
 
 /* Configurações Gerais */
@@ -35,6 +40,7 @@ body {
     padding: 20px 50px; 
     background-color: var(--cor-fundo);
     color: var(--gold-muted);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
 }
 
 .titulo-cabecalho {
@@ -405,3 +411,188 @@ footer {
   .galeria-mosaico .larga{
     grid-column: span 2 ;
   }
+/* ── CONTATO ── */
+
+
+/* ── INFORMAÇÕES PARA CONTATO ── */
+
+ .contato-items {
+     display: flex; 
+     flex-direction: column;
+    gap: 1.5rem;
+     }
+
+  .contato-item {
+    display: flex; 
+    gap: 1rem; 
+    align-items: flex-start;
+    padding: 1.2rem; 
+    border: 1px solid 
+    var(--cream-dark);
+    border-radius: 6px; 
+    background-color: #FBF3EA;
+    transition: border-color .2s;
+  }
+
+  .contato-item-icone {
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%; 
+    flex-shrink: 0;
+    background: var(--brown-deep);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+ #contato {
+    background-color: #FFFDF9;
+    padding: calc(var(--nav-h) + 4rem) 8vw 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: start;
+  }
+
+.contato-item-titulo { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 0.95rem; 
+    color: var(--brown-deep); 
+    margin-bottom: 0.25rem;
+ }
+
+ .contato-item-dados { 
+    font-size: 0.85rem; 
+    color: var(--text-muted); 
+    line-height: 1.5; }
+
+  .contato-item-dados a { 
+    color: var(--brown-warm); 
+    text-decoration: none; }
+
+ .contato-intro {
+    font-size: 0.7rem; 
+    letter-spacing: 0.25em; 
+    text-transform: uppercase;
+    color:#C67C4E; 
+    margin-bottom: 0.8rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 0.8rem;
+  }
+
+  .contato-intro::before, .contato-intro::after {
+    content: '';
+    width: 32px; 
+    height: 1px; 
+    background: #C67C4E;
+    }
+
+    .contato-esquerda .contato-conteudo { 
+    text-align: left; 
+    margin: 0 0 2rem; 
+    color:var(--brown-warm);
+    font-size: 0.90rem;
+    line-height: 1.7; 
+}
+
+    .contato-titulo{
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    color: var(--brown-deep); 
+    margin-bottom: 1rem;
+    }
+
+
+
+    /* ── FORMULÁRIO ── */
+
+
+    .contato-formulario {
+    background: var(--cream);
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px; padding: 2.5rem;
+  }
+    .formulario-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; color: var(--brown-deep);
+    margin-bottom: 1.5rem;
+  }
+    .forms-grupo { margin-bottom: 1.2rem; }
+
+    .form-label {
+    display: block; 
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em; 
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .forms-input, .forms-textarea {
+    width: 100%; 
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--cream-dark); 
+    border-radius: 4px;
+    background: var(--cream-white);
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    transition: border-color .2s, box-shadow .2s;
+    outline: none;
+    box-sizing: border-box;
+  }
+  .forms-input:focus, .forms-textarea:focus {
+    border-color: var(--brown-warm);
+    box-shadow: 0 0 0 3px rgba(198,124,78,0.12);
+  }
+  .forms-input::placeholder, .forms-textarea::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+  }
+  .forms-textarea { 
+    resize: vertical; 
+    min-height: 100px;
+}
+  .formulario1 { 
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+ }
+
+  /* ── BOTÃO PRIMÁRIO ── */
+  .button-primario {
+    background-color: var(--gold-muted);
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    font-family: var(--font-nav);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width:100% ;
+    border-radius: 4px;
+  }
+
+  .button-primario:hover {
+    background-color: var(--brown-warm);
+  }
+
+  .map-container {
+    margin-top: 1.5rem;
+    height: 180px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--cream-dark), var(--cream));
+    border: 1px solid var(--cream-dark);
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 0.5rem; color: var(--text-muted);
+    font-size: 0.82rem;
+    cursor: pointer; 
+    transition: border-color .2s;
+  }
+  .map-container:hover { border-color: var(--brown-warm); }
+  .map-icon { font-size: 2rem; }

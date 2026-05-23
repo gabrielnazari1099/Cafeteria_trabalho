@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Coffee Stop - Contato</title>
 </head>
+
 <body>
 
     <header class="cabecalho">
@@ -21,10 +23,82 @@
             </ul>
         </nav>
     </header>
-    
     <hr>
-
     <main>
+        <section id="contato">
+
+            <div class="contato-esquerda">
+                <p class="contato-intro">Fale conosco</p>
+                <h2 class="contato-titulo">Contato</h2>
+                <p class="contato-conteudo">Venha nos visitar ou entre em contato.
+                    Adoramos receber feedback e <br> responder dúvidas.</p>
+
+                <div class="contato-items">
+                    <div class="contato-item">
+                        <div class="contato-item-icone">📍</div>
+                        <div>
+                            <p class="contato-item-titulo">Endereço</p>
+                            <p class="contato-item-dados">Rua do Café, 142 · Centro<br>Cascavel, PR — CEP 85800-000</p>
+                        </div>
+                    </div>
+
+                    <div class="contato-item">
+                        <div class="contato-item-icone">📞</div>
+                        <div>
+                            <p class="contato-item-titulo">Telefone & WhatsApp</p>
+                            <p class="contato-item-dados">(45) 99999-0000</p>
+                        </div>
+                    </div>
+
+                    <div class="contato-item">
+                        <div class="contato-item-icone">📧</div>
+                        <div>
+                            <p class="contato-item-titulo">E-mail</p>
+                            <p class="contato-item-dados">TheCoffeeStop@cafevelvet.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="contato-item">
+                        <div class="contato-item-icone">🕐</div>
+                        <div>
+                            <p class="contato-item-titulo">Horário de Funcionamento</p>
+                            <p class="contato-item-dados">
+                                Segunda a Sexta: 7h–21h<br>
+                                Sábado e Domingo: 8h–22h
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-formulario">
+                <p class="formulario-titulo">Envie uma mensagem</p>
+                <div class="formulario1">
+                    <div class="forms-grupo">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="forms-input" placeholder="Seu nome" autocomplete="off" required>
+                    </div>
+                    <div class="forms-grupo">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" class="forms-input" placeholder="(00) 00000-0000" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="forms-grupo">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="forms-input" placeholder="seu@email.com" autocomplete="off">
+                </div>
+                <div class="forms-grupo">
+                    <label class="form-label">Assunto</label>
+                    <input type="text" class="forms-input" placeholder="Reserva, evento, feedback..." autocomplete="off" required>
+                </div>
+                <div class="forms-grupo">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="forms-textarea" placeholder="Escreva aqui..." autocomplete="off"  required></textarea >
+                </div>
+                <button class="button-primario" >Enviar Mensagem</button>
+            </div>
+            
+        </section>
     </main>
 
     <footer>
@@ -38,4 +112,5 @@
     </footer>
 
 </body>
+
 </html>
