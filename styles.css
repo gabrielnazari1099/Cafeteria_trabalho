@@ -305,3 +305,80 @@ footer {
 .footer-links a:hover { 
     color: var(--gold); 
 }
+
+/* Sobre - GABRIEL*/
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  gap: 50px;
+  min-height: 70vh;
+}
+
+.sobre-conteudo-esquerda {
+  flex: 1;
+}
+
+.sobre-conteudo-esquerda h2 {
+  font-size: 2.8rem;
+  color: var(--cor-primaria);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sobre-conteudo-esquerda p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: var(--brown-light);
+}
+
+.sobre-conteudo-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-conteudo-imagem img {
+  width: 100%;
+  max-width: 367px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.sobre-linha-do-tempo {
+    background-color: var(--cor-fundo-2);
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.sobre-item {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    gap: 20px;
+    color: var(--cor-primaria);
+    padding-left: 1%;
+    border-left: solid;
+    border-left-width: 5px;
+    border-left-color: var(--cor-primaria);
+    margin-left: 18%;
+    margin-right:16%;
+    margin-bottom: 10px;
+}
+
+.sobre-item h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+}
+
+.sobre-item p{
+    font-size: 1.2em;
+    line-height: 1,2;
+    text-align: justify;
+    color: var(--brown-light);
+}
