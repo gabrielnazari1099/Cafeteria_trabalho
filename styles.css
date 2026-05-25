@@ -542,9 +542,6 @@ hr {
     width:100% ;
     border-radius: 4px;
 }
-.button-primario:hover {
-    background-color: var(--brown-warm);
-}
 
 footer {
     display: flex; 
