@@ -12,12 +12,14 @@
     --cream-dark: #F0D9BE;
     --text-muted: #8A6040;
     --brown-warm: #C67C4E;
+    --cream: #FBF3EA;
+    --cream-white: #FFFDF9;
 
     /* Fontes - Para usar é só colocar 'var(--nome-da-fonte)' */
     --font-main: "Roboto", sans-serif;
     --font-title: "Playfair Display", serif;
     --font-nav: "Jost", sans-serif;
-     --nav-h: 72px;
+    --nav-h: 72px;
      
 }
 
@@ -149,7 +151,7 @@ footer {
  .contato-items {
      display: flex; 
      flex-direction: column;
-    gap: 1.5rem;
+     gap: 1.5rem;
      }
 
   .contato-item {
@@ -242,11 +244,13 @@ footer {
     .contato-formulario {
     background: var(--cream);
     border: 1px solid var(--cream-dark);
-    border-radius: 8px; padding: 2.5rem;
+    border-radius: 8px; 
+    padding: 2.5rem;
   }
     .formulario-titulo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem; color: var(--brown-deep);
+    font-size: 1.4rem; 
+    color: var(--brown-deep);
     margin-bottom: 1.5rem;
   }
     .forms-grupo { margin-bottom: 1.2rem; }
@@ -265,7 +269,7 @@ footer {
     padding: 0.75rem 1rem;
     border: 1px solid var(--cream-dark); 
     border-radius: 4px;
-    background: var(--cream-white);
+    background: var();
     font-size: 0.9rem;
     color: var(--text-dark);
     transition: border-color .2s, box-shadow .2s;
@@ -285,7 +289,9 @@ footer {
     min-height: 100px;
 }
   .formulario1 { 
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem;
  }
 
   /* ── BOTÃO PRIMÁRIO ── */

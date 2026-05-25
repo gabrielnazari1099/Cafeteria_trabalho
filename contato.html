@@ -71,34 +71,50 @@
                 </div>
             </div>
 
-            <div class="contato-formulario">
+            <form class="contato-formulario" action="" method="">
                 <p class="formulario-titulo">Envie uma mensagem</p>
                 <div class="formulario1">
-                    <div class="forms-grupo">
+
+
+                <div class="forms-grupo">
                         <label class="form-label">Nome</label>
-                        <input type="text" class="forms-input" placeholder="Seu nome" autocomplete="off" required>
-                    </div>
-                    <div class="forms-grupo">
-                        <label class="form-label">Telefone</label>
-                        <input type="tel" class="forms-input" placeholder="(00) 00000-0000" autocomplete="off" required>
-                    </div>
+                        <input type="text" name="nome" class="forms-input" placeholder="Seu nome" autocomplete="off"
+                            required>
                 </div>
+
+
+                <div class="forms-grupo">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" name="telefone" class="forms-input" placeholder="(00) 00000-0000"
+                            autocomplete="off" required> 
+                </div>
+
+
+                </div>
+
+
                 <div class="forms-grupo">
                     <label class="form-label">E-mail</label>
-                    <input type="email" class="forms-input" placeholder="seu@email.com" autocomplete="off">
+                    <input type="email" name="email" class="forms-input" placeholder="seu@email.com" autocomplete="off">
                 </div>
+
+
                 <div class="forms-grupo">
                     <label class="form-label">Assunto</label>
-                    <input type="text" class="forms-input" placeholder="Reserva, evento, feedback..." autocomplete="off"
-                        required>
+                    <input type="text" name="assunto" class="forms-input" placeholder="Reserva, evento, feedback..."
+                        autocomplete="off" required>
                 </div>
+
+
                 <div class="forms-grupo">
                     <label class="form-label">Mensagem</label>
-                    <textarea class="forms-textarea" placeholder="Escreva aqui..." autocomplete="off"
+                    <textarea name="mensagem" class="forms-textarea" placeholder="Escreva aqui..." autocomplete="off"
                         required></textarea>
                 </div>
+
+
                 <button class="button-primario" type="submit">Enviar Mensagem</button>
-            </div>
+            </form>
 
         </section>
     </main>
