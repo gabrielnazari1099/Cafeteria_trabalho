@@ -1,16 +1,5 @@
-/* Animação suave de entrada (Fade In Up) */
-@keyframes subirAparecer {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Definição das Variáveis Globais */
+
 :root /* variáveis */ {
 
     /* Cores - Para usar é só colocar 'var(--nome-da-cor)' */
@@ -24,8 +13,6 @@
     --cream-dark: #F0D9BE;
     --text-muted: #8A6040;
     --brown-warm: #C67C4E;
-    --sep-color: #7c4e19;
-    --border-image: #000000 ;
 
     /* Fontes - Para usar é só colocar 'var(--nome-da-fonte)' */
     --font-main: "Roboto", sans-serif;
@@ -35,6 +22,7 @@
      
 }
 
+/* Configurações Gerais */
 body {
     background-color: var(--cor-fundo); 
     color: #000000; 
@@ -63,6 +51,7 @@ body {
     text-decoration: none;
 }
 
+/* Menu de Navegação */
 .nav-link {
     display: flex;
     list-style: none;
@@ -83,6 +72,7 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Animação da linha (Underline) */
 .nav-link a::after {
     content: '';
     position: absolute;
@@ -105,13 +95,14 @@ body {
     width: 100%;
 }
 
+/* Elementos de Separação e Rodapé */
 hr {
     border: none;
     border-top: 1px solid var(--sep-color);
     margin: 0 20px;
 }
 
-/* começando o conteúdo da página (ERICK) */
+/* começando o conteúdo - index (ERICK) */
 .home-conteudo {
   display: flex;
   align-items: center;
@@ -119,7 +110,6 @@ hr {
   padding: 60px 8%;
   gap: 50px;
   min-height: 70vh;
-  animation: subirAparecer 1s ease-out;
 }
 
 .home-conteudo-esquerda {
@@ -178,7 +168,6 @@ padding: 60px 8%;
 }
 
 .home-conteudo-imagem img {
-  filter: drop-shadow(0px 0px 20px var( --border-image));
   width: 100%;
   max-width: 367px;
   height: 400px;
@@ -285,18 +274,13 @@ padding: 60px 8%;
     padding-right: 10px;
     background-clip: content-box;
 }
-    background-color: var(--gold);
-    color: var(--brown-bg); /* Inverte as cores no hover */
-    box-shadow: 0 0 15px rgba(212, 163, 85, 0.4);
-}
-
 
 footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
     padding: 2rem 8vw;
-    background: var(--brown-deep);
+    background: var(--brown-bg);
     border-top: 1px solid var(--sep-color);
     margin: 0 20px;
 }
